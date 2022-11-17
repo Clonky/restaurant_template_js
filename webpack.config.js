@@ -8,4 +8,9 @@ module.exports = {
         filename: "main.js",
     },
     plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
+    module: {
+        rules: [
+            { test: /\.css$/i, use: "css-loader" }
+        ],
+    },
 };
