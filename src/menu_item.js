@@ -1,4 +1,5 @@
-export const menu_item = ( function(ctx, img, description, price) {
+defaultExport { menu_item };
+const menu_item = ( function(ctx, img, description, price) {
     "use strict";
 
     const element = ctx.createElement("div");

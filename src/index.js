@@ -1,4 +1,5 @@
 import menu_item from "./menu_item"
+import pretzel from "./items"
 
 const setup_basis = function() {
     const element = document.createElement("div");
@@ -6,4 +7,6 @@ const setup_basis = function() {
     return element;
 }
 
-document.body.append(setup_basis());
+content = setup_basis();
+content.appendChild(pretzel);
+document.body.append(content);
