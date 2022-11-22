@@ -1,5 +1,4 @@
-defaultExport { menu_item };
-const menu_item = ( function(ctx, img, description, price) {
+const builder = ( function(ctx, img, description, price) {
     "use strict";
 
     const element = ctx.createElement("div");
@@ -13,7 +12,7 @@ const menu_item = ( function(ctx, img, description, price) {
         return element;
     }
 
-    const _insert_decription = function(element, desc) {
+    const _insert_description = function(element, desc) {
         const description_element = ctx.createElement("div");
         description_element.innerHTML = desc;
         description_element.classList.add("menu-item-description");
@@ -37,3 +36,5 @@ const menu_item = ( function(ctx, img, description, price) {
         menu_item_element: menu_item_element
     };
 })
+
+export { builder };

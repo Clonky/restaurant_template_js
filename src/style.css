@@ -1,0 +1,5 @@
+.content {
+    display: grid;
+    grid_template_rows: auto;
+    grid_template_columns: repeat(3, 200px);
+}

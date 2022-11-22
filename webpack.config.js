@@ -13,11 +13,12 @@ module.exports = {
         filename: "[name].bundle.js",
         clean: true,
     },
+    devtool: "inline-source-map",
     plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
     module: {
         rules: [
-            { test: /\.css$/i, use: "css-loader" },
-            { test; /\.(png|svg|jpg|gif|jpeg)$/i, type: "asset/resource" },
+            { test: /\.css$/i, use: ["style-loader", "css-loader"] },
+            { test: /\.(png|svg|jpg|gif|jpeg)$/i, type: "asset/resource" },
         ],
     },
 };
