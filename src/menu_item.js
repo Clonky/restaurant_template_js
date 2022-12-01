@@ -1,3 +1,4 @@
+import "./style.css";
 const builder = ( function(ctx, img, description, price) {
     "use strict";
 

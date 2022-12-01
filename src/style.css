@@ -1,5 +1,47 @@
+:root {
+    --text-col: #FDB750;
+    --accent-1: #FC2E20;
+    --accent-2: #FD7F20;
+    --bg: #010100;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .content {
     display: grid;
-    grid_template_rows: auto;
-    grid_template_columns: repeat(3, 200px);
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+}
+
+.hero {
+    color: var(--text-col);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./pexels-barhero.jpg");
+    flex: 0 0 1;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-description {
+    color: var(--text-col);
+    max-width: 50%;
+    padding: 1rem;
+}
+
+.menu-item-price {
+    color: var(--text-col);
 }
