@@ -7,13 +7,14 @@
 
 body {
     font-family: sans-serif;
+    color: var(--text-col);
     background-color: var(--bg);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.content {
+.menu {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
@@ -29,6 +30,48 @@ body {
     height: 100vh;
     background-image: url("./pexels-barhero.jpg");
     flex: 0 0 1;
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.content-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 0;
+}
+
+.button-holder {
+    flex: 0 0 1;
+    max-width: 200px;
+}
+
+#holder-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 400px;
+    background: var(--bg);
+}
+
+.textbox {
+    background: var(--bg);
+    border: 1rem solid var(--accent-1);
+    border-radius: 8px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
 }
 
 .menu-item {
